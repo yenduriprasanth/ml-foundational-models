@@ -14,6 +14,6 @@ def func():
 
 if submitted:
     z=func()
-    st.title("Email Response for patient : "+option)
+    st.title("Email Response for patient : "+st.session_state.id)
     #st.json(z, expanded=True)
     z
