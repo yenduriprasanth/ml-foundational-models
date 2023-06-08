@@ -9,7 +9,7 @@ with st.form("my_form"):
 # You can access the value at any point with:
 #st.session_state.name
 def func():
-    z=requests.get("https://api.fda.gov/drug/label.json?search=openfda.generic_name:'Erlotinib'").json()
+    z=requests.get("https://api.hackathon.guardanthealth.com/dev/foundational-models/email")
     return z
 
 if submitted:
