@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 
-
 with st.form("my_form"):
     st.header("Med Affairs Outreach Email Generator")
     st.text_input("Input text", key="name")
@@ -11,7 +10,7 @@ with st.form("my_form"):
 #st.session_state.name
 def func():
     z=requests.post("https://api.hackathon.guardanthealth.com/dev/foundational-models/email")
-    return z.text
+    return z.json()['draft_email']
 
 if submitted:
     z=func()
