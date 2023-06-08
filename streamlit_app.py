@@ -15,4 +15,5 @@ def func():
 if submitted:
     z=func()
     st.title("Email Response")
-    st.json(z, expanded=True)
+    #st.json(z, expanded=True)
+    z
