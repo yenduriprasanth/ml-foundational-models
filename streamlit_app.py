@@ -9,7 +9,7 @@ with st.form("my_form"):
 # You can access the value at any point with:
 #st.session_state.name
 def func():
-    z=requests.post("https://api.hackathon.guardanthealth.com/dev/foundational-models/email")
+    z=requests.post("https://api.hackathon.guardanthealth.com/dev/foundational-models/email",json={"patient_id": st.session_state.name})
     return z.json()['draft_email']
 
 if submitted:
