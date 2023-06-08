@@ -5,7 +5,7 @@ with st.form("my_form"):
     st.header("Med Affairs Outreach Email Generator")
     option = st.selectbox(
         'Patient Name',
-        ('James', 'Warren'))
+        ('Pat001', 'Pat002'))
     submitted = st.form_submit_button("Submit")
 
 # You can access the value at any point with:
