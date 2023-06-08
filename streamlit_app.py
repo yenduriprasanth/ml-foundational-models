@@ -7,4 +7,4 @@ st.session_state.name
 
 z=requests.get("https://api.fda.gov/drug/label.json?search=openfda.generic_name:'Erlotinib'").json()
 
-st.json(z, *, expanded=True)
+st.json(z, expanded=True)
