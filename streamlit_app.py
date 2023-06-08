@@ -1,5 +1,10 @@
 import streamlit as st
 import requests
+from PIL import Image
+
+image = Image.open('friendly-chatbot.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
 
 with st.form("my_form"):
     st.header("Med Affairs Outreach Email Generator")
