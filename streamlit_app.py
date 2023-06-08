@@ -10,7 +10,7 @@ with st.form("my_form"):
 #st.session_state.name
 def func():
     z=requests.post("https://api.hackathon.guardanthealth.com/dev/foundational-models/email")
-    return z.json()
+    return z.text
 
 if submitted:
     z=func()
