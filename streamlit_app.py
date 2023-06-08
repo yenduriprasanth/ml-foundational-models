@@ -9,8 +9,11 @@ st.text_input("Diagnostic type", key="diagnostic_type")
 
 # You can access the value at any point with:
 #st.session_state.name
+def func():
+    z=requests.get("https://api.fda.gov/drug/label.json?search=openfda.generic_name:'Erlotinib'").json()
+    return z
 
-z=requests.get("https://api.fda.gov/drug/label.json?search=openfda.generic_name:'Erlotinib'").json()
+st.form_submit_button(label="Submit", on_click=func())
 
 st.title("Email Response")
 st.json(z, expanded=True)
