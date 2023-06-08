@@ -2,13 +2,8 @@ import streamlit as st
 import requests
 
 with st.form("my_form"):
-    st.header("Patient Information")
-    st.text_input("Name", key="name")
-    st.text_input("Cancer type", key="cancer_type")
-    st.text_input("Alteration", key="alteration")
-    st.text_input("Approved therapy", key="therapy")
-    st.text_input("Diagnostic type", key="diagnostic_type")
-
+    st.header("Med Affairs Outreach Email Generator")
+    st.text_input("Input text", key="name")
     submitted = st.form_submit_button("Submit")
 
 # You can access the value at any point with:
