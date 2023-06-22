@@ -10,8 +10,8 @@ with st.form("my_form"):
 #st.session_state.name
 def func():
     z=requests.post("https://api.npdata.guardanthealth.com/dev/foundational-models/email",json={"patient_id": st.session_state.id})
-    #return z.json()['draft_email']
-    return z
+    return z.json()['draft_email']
+    #return z
 
 if submitted:
     z=func()
