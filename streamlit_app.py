@@ -4,7 +4,7 @@ import requests
 with st.form("my_form"):
     st.header("Med Affairs Outreach Email Content Generator")
     st.text_input("Please enter Patient Id", key="id")
-    st.text_input("Please enter Number of Results", key="n_results")
+    #st.text_input("Please enter Number of Results", key="n_results")
     submitted = st.form_submit_button("Submit")
 
 # You can access the value at any point with:
@@ -17,8 +17,9 @@ def func():
 if submitted:
     z=func()
     st.title("Here's the email content ")
+    z
     #st.json(z, expanded=True)
-    for i in range(int(st.session_state.n_results)):
-        z[i]
-        print("/n")
+    #for i in range(int(st.session_state.n_results)):
+    #    z[i]
+    #    print("/n")
     
