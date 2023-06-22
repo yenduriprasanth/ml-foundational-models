@@ -12,13 +12,13 @@ with st.form("my_form"):
 def func():
     z=requests.post("https://api.npdata.guardanthealth.com/dev/foundational-models/email",json={"patient_id": st.session_state.id})
     #return z.json()['draft_email']
-    return z.json()
+    return z.json()['draft_email']
 
 if submitted:
     z=func()
     st.title("Here's the email content ")
     #st.json(z, expanded=True)
     for i in range(int(st.session_state.n_results)):
-        z
+        z[i]
         print("/n")
     
