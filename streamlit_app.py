@@ -19,6 +19,6 @@ if submitted:
     st.title("Here's the email content ")
     #st.json(z, expanded=True)
     for i in range(int(st.session_state.n_results)):
-        z[i].json()['draft_email']
+        z[i] #.json()['draft_email']
         print("/n")
     
