@@ -18,6 +18,8 @@ if submitted:
     z=func()
     st.title("Here's the email content ")
     z
+
+st.button('Edit')     st.button('Approve')    st.button('Reject')
     #st.json(z, expanded=True)
     #for i in range(int(st.session_state.n_results)):
     #    z[i]
