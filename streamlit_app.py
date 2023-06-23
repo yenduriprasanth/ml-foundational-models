@@ -35,7 +35,7 @@ def ChangeButtonColour(widget_label, font_color, background_color='transparent')
 if submitted:
     z=func()
     st.title("Here's the email content ")
-    z
+    st.text(z)
     col1, col2, col3 = st.columns([1,1,1])
 
     with col1:
@@ -44,9 +44,9 @@ if submitted:
         st.button('Approve')
     with col3:
         st.button('Reject')
-    ChangeButtonColour('Edit', 'blue', 'red')
-    ChangeButtonColour('Approve', 'blue', 'red')
-    ChangeButtonColour('Reject', 'blue', 'red')
+    ChangeButtonColour('Edit', 'red')
+    ChangeButtonColour('Approve', 'red')
+    ChangeButtonColour('Reject', 'red')
 
 #[st.button('Edit') ,    st.button('Approve')   , st.button('Reject')]
     #st.json(z, expanded=True)
