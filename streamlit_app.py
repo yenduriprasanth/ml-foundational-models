@@ -44,7 +44,9 @@ if submitted:
         st.button('Approve')
     with col3:
         st.button('Reject')
-    ChangeButtonColour('Edit', 'red', 'blue')
+    ChangeButtonColour('Edit', 'blue', 'red')
+    ChangeButtonColour('Approve', 'blue', 'red')
+    ChangeButtonColour('Reject', 'blue', 'red')
 
 #[st.button('Edit') ,    st.button('Approve')   , st.button('Reject')]
     #st.json(z, expanded=True)
