@@ -14,14 +14,20 @@ def func():
     #return z.json()['draft_email']
     return z.json()['draft_email']
 
-tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
-tab1.write("this is tab 1")
-tab2.write("this is tab 2")
+
 
 if submitted:
     z=func()
     st.title("Here's the email content ")
     z
+    col1, col2, col3 = st.columns([1,1,1])
+
+    with col1:
+        st.button('Edit')
+    with col2:
+        st.button('Approve')
+    with col3:
+        st.button('Reject')
 
 #[st.button('Edit') ,    st.button('Approve')   , st.button('Reject')]
     #st.json(z, expanded=True)
