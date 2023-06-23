@@ -35,7 +35,8 @@ def ChangeButtonColour(widget_label, font_color, background_color='transparent')
 if submitted:
     z=func()
     st.title("Here's the email content ")
-    st.text(z)
+    #st.text(z)
+    z
     col1, col2, col3 = st.columns([1,1,1])
 
     with col1:
